@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar paciente</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <a href="index.html">Inicio</a>
+    <a href="../criar_paciente/criar_paciente.html">Criar paciente</a>
+    <h1>Editar Paciente</h1>
+    <form id="editarPacienteForm">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" maxlength="14"><br>
+        <label for="dataNascimento">Data de Nascimento:</label><br>
+        <input type="text" id="dataNascimento" name="dataNascimento"><br>
+        <label for="sigla_estado">Estado:</label>
+        <select id="sigla_estado" name="sigla_estado"></select><br>
+        <label for="telefone_primario">Telefone Primário:</label>
+        <input type="text" id="telefone_primario" name="telefone_primario" maxlength="15"><br>
+        <label for="telefone_secundario">Telefone Secundário:</label>
+        <input type="text" id="telefone_secundario" name="telefone_secundario" maxlength="15"><br>
+        <input type="submit" value="Salvar">
+    </form>
+    <script src="../inputmask/inputmask.js"></script>
+    <script src="editar_paciente.js"></script>
+</body>
+</html>
